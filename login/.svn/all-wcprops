@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/singpolyma/!svn/ver/40/trunk/theproject/login
+END
+try_auth.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/singpolyma/!svn/ver/40/trunk/theproject/login/try_auth.php
+END
+finish_auth.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/singpolyma/!svn/ver/44/trunk/theproject/login/finish_auth.php
+END
+form.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/singpolyma/!svn/ver/44/trunk/theproject/login/form.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/singpolyma/!svn/ver/40/trunk/theproject/login/index.php
+END
+out.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/singpolyma/!svn/ver/44/trunk/theproject/login/out.php
+END
+common.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/singpolyma/!svn/ver/40/trunk/theproject/login/common.php
+END

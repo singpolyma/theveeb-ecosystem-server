@@ -1,0 +1,138 @@
+html {
+	margin: 0;
+	padding: 0;
+	background: #322b22 url("bg.png") repeat-x;
+}
+body {
+	margin: 0;
+	padding-top: 5em;
+	padding-right: 10%;
+	padding-left: 10%;
+	background: #322b22 url("bg.png") repeat-x;
+	color: #fff;
+	font-family: sans-serif;
+}
+img {
+	border-width: 0;
+}
+a:link, a:visited {
+	color: #cdf;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #fff;
+}
+abbr {
+	border-bottom: 1px dotted white;
+}
+h1 a, #logo a {
+	position: absolute;
+	z-index: 100;
+	top: 0em;
+	left: 15%;
+	margin: 0px;
+	font-size: 1em;
+	width: 300px;
+	padding-top: 34px;
+	height: 0px;
+	overflow: hidden;
+	background: url("logo.png") no-repeat;
+}
+#nav, #navibar {
+	position: absolute;
+	top: 1em;
+	right: 10%;
+	width: 45%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-transform: uppercase;
+}
+#nav li, #navibar li {
+	display: block;
+	float: left;
+	list-style-type: none;
+	text-align: center;
+	width: 25%;
+	min-width: 6em;
+}
+h2.feature {
+	float: left;
+	clear: left;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	text-align: right;
+	padding-right: 2em;
+	margin-right: 2em;
+	width: 21.5em;
+}
+p.feature {
+	/*position: absolute; Commented out for non-JS browsers with CSS */
+	margin-top: 1em;
+	/*margin-left: 36em;
+	overflow: auto; This is a saner default. Turned back on by JS if appropriate. */
+	margin-right: 12%;
+	line-height: 1.8em;
+	/*max-height: 14em;*/
+}
+#about {
+	position: relative;
+	top: 3em;
+	clear: both;
+	background-color: #3a342b;
+	padding: 0.3em 0em 0.1em 0em;
+	-moz-border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+	border-radius: 0.7em;
+}
+#about h2 {
+	color: #625d55;
+	text-transform: uppercase;
+	margin-left: 2em;
+}
+#about p {
+	color: #332;
+	padding: 1em;
+	background-color: #ba8;
+	-moz-border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+	border-radius: 0.7em;
+	padding-left: 3em;
+}
+#theveeb .button {
+	display: block;
+	width: 6em;
+	text-align: center;
+	border: 3px outset black;
+	margin: auto;
+	margin-top: 0.4em;
+	padding: 1em;
+	background-color: #754;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bold;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+}
+.buttons {
+	display: block;
+	text-align: center;
+}
+#theveeb .buttons a.button {
+	display: inline-block;
+	margin-right: 2em;
+}
+#openid_identifier {
+	background: white url("openid32.png") no-repeat 1px 1px;
+	color: black;
+}
+#footer {
+	clear: both;
+	margin-top: 7em;
+	font-size: 0.7em;
+	margin-left: 3em;
+}
+#footer a {
+	margin-right: 5%;
+}

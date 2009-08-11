@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /apps/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{query_string} ^(.*)$
+RewriteRule ([^\/]+)\/* /apps/app.php?package=$1&%1 [L]
+</IfModule>
+

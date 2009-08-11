@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /users/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{query_string} ^(.*)$
+RewriteRule ([^\/]+)\/* /users/user.php?nickname=$1&%1 [L]
+</IfModule>
+
