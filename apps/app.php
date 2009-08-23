@@ -107,9 +107,9 @@ BODY;
 		}
 		// Check if the user has already bought this, or it's free
 		// XXX if we ever allow charging for upgrades, this logic will have to do magic with version numbers matching
-		$gratis = $package['price'] == 0 || $user_rating !== FALSE;
+		$gratis = $package['price'] == 0 || $user_rating !== FALSE || $package['developer_user_id'] == $LOGIN_DATA['user_id'];
 		// Make sure they have enough
-		if(!$gratis && $package['price'] > $LOGIN_DATA['balance'] && $package['developer_user_id'] != $LOGIN_DATA['user_id']) {
+		if(!$gratis && $package['price'] > $LOGIN_DATA['balance']) {
 			header('HTTP/1.1 403 Forbidden', true, 403);
 			header('Content-Type: text/plain; charset=utf-8');
 			die("Balance too low.\n");
