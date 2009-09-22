@@ -119,6 +119,10 @@
 			<input type="submit" name="toggle_list" value="<?php echo $LOGIN_DATA['list'] ? 'Unsubscribe from mailing list' : 'Subscribe to mailing list'; ?>" />
 		</fieldset></form>
 
+		<h3 id="balance">Balance</h3>
+		<p>Your balance is currently <?php echo (int)$LOGIN_DATA['balance']; ?> ¤</p>
+		<p><a href="/paypal/start"><img src="https://www.paypal.com/en_US/i/btn/btn_paynowCC_LG.gif" alt="Pay Now" /></a></p>
+
 		<h3 id="identities">Email Addresses and OpenIDs</h3>
 		<ul>
 		<?php
