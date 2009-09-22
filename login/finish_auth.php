@@ -5,10 +5,10 @@ session_start();
 
 $return = $_SESSION['return_to']; unset($_SESSION['return_to']);
 $action = $_SESSION['action']; unset($_SESSION['action']);
-if(!$return) $return = 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']);
+if(!$return) $return = 'https://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']);
 if(!strstr($return, '?')) $return .= '?';
 
-$process_url = sprintf("http://%s%s/finish_auth.php",
+$process_url = sprintf("https://%s%s/finish_auth.php",
                        $_SERVER['HTTP_HOST'],
                        dirname($_SERVER['PHP_SELF']));
 
@@ -21,12 +21,12 @@ if($action == 'add')
 if ($response->status == Auth_OpenID_CANCEL) {
     // This means the authentication was cancelled.
     if($action == 'add')
-	    header('Location: http://'.$_SERVER['HTTP_HOST'].dirname(dirname($_SERVER['PHP_SELF'])),true,303);//redirect to home
+	    header('Location: https://'.$_SERVER['HTTP_HOST'].dirname(dirname($_SERVER['PHP_SELF'])),true,303);//redirect to home
     else
-	    header('Location: http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).'/out.php',true,303);//logout, redirect to home
+	    header('Location: https://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).'/out.php',true,303);//logout, redirect to home
 } else if ($response->status == Auth_OpenID_FAILURE) {
 	$msg = "OpenID authentication failed: " . $response->message;
-	header('Location: '.$return.'&error='.urlencode($msg),true,303);
+	header('Location: https://theveeb.com/login?error='.urlencode($msg),true,303);
 	die;
 } else if ($response->status == Auth_OpenID_SUCCESS) {
    require(dirname(__FILE__).'/../include/connectDB.php');//connect to database
